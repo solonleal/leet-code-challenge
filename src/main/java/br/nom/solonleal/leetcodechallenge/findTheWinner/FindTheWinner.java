@@ -1,7 +1,6 @@
 package br.nom.solonleal.leetcodechallenge.findTheWinner;
 
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.Arrays;
 
 /**
  * Desafio 1823
@@ -10,19 +9,39 @@ import java.util.Queue;
 public class FindTheWinner {
 
     public int findTheWinner(int n, int k) {
-        Queue<Integer> queue = new LinkedList<>();
+        int[] amigos = new int[n];
+        int qtdAmigosRestantes = n;
+        int amigoAtual = 0;
 
-        for(int i = 1; i <= n; i++) {
-            queue.add(i);
-        }
+        Arrays.fill(amigos, 1);
 
-        while(queue.size() > 1) {
-            for(int j = 0; j < k - 1; j++) {
-                queue.add(queue.poll());
+        while(qtdAmigosRestantes > 1) {
+
+            for(int i = 0; i < k; i++) {
+                int amigo = amigos[amigoAtual];
+
+                while(amigo == 0) {
+                    amigoAtual = (amigoAtual == n - 1) ? 0 : amigoAtual + 1;
+                    amigo = amigos[amigoAtual];
+                }
+
+                if(i < k - 1) {
+                    amigoAtual = (amigoAtual == n - 1) ? 0 : amigoAtual + 1;
+                }
             }
-            queue.remove();
+
+            amigos[amigoAtual] = 0;
+            amigoAtual = (amigoAtual == n - 1) ? 0 : amigoAtual + 1;
+            qtdAmigosRestantes --;
         }
 
-        return queue.peek();
+        for(int i = 0; i < n; i++) {
+            if(amigos[i] == 1) {
+                amigoAtual = i + 1;
+                break;
+            }
+        }
+
+        return amigoAtual;
     }
 }
