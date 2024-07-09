@@ -11,9 +11,9 @@ public class WaterBottles {
             return numBottles;
         }
 
-        int quantidadeGarrafasVaziasTrocadas = numBottles / numExchange;
+        int quantidadeGarrafasCheiasTrocadas = numBottles / numExchange;
         int quantidadeGarrafasRestantes = numBottles % numExchange;
-        int proximaInteracao = quantidadeGarrafasVaziasTrocadas + quantidadeGarrafasRestantes;
+        int proximaInteracao = quantidadeGarrafasCheiasTrocadas + quantidadeGarrafasRestantes;
 
         return numWaterBottles(proximaInteracao, numExchange) + numBottles - quantidadeGarrafasRestantes;
     }

@@ -22,8 +22,8 @@ class WaterBottlesTest {
     @SuppressWarnings("unused")
     @MethodSource("cenariosNumWaterBottles")
     @ParameterizedTest(name = "Cenário de Teste - tendo {0} garrafas de água, podendo trocar {1} garrafas vazias por uma cheia, você consegue beber {2} de água")
-    void testTwoSum(int qtdGarrafas, int numGarrafasPorTroca, int resultadoEsperado) {
-        int retorno = desafio.numWaterBottles(qtdGarrafas, numGarrafasPorTroca);
+    void testNumWaterBottles(int qtdGarrafas, int numGarrafasVaziasPorGarrafaCheia, int resultadoEsperado) {
+        int retorno = desafio.numWaterBottles(qtdGarrafas, numGarrafasVaziasPorGarrafaCheia);
 
         assertEquals(resultadoEsperado, retorno);
     }
