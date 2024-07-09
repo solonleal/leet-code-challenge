@@ -1,4 +1,4 @@
-package br.nom.solonleal.leetcodechallenge.waterBottles;
+package br.nom.solonleal.leetcodechallenge.waterbottles;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;

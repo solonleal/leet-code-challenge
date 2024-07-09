@@ -1,4 +1,4 @@
-package br.nom.solonleal.leetcodechallenge.waterBottles;
+package br.nom.solonleal.leetcodechallenge.waterbottles;
 
 /*
  * Desafio 1518

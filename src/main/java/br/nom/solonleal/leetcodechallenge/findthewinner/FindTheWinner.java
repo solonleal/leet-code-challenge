@@ -1,4 +1,4 @@
-package br.nom.solonleal.leetcodechallenge.findTheWinner;
+package br.nom.solonleal.leetcodechallenge.findthewinner;
 
 /**
  * Desafio 1823

@@ -1,4 +1,4 @@
-package br.nom.solonleal.leetcodechallenge.findTheWinner;
+package br.nom.solonleal.leetcodechallenge.findthewinner;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
