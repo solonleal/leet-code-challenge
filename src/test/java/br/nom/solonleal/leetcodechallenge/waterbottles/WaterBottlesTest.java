@@ -19,7 +19,6 @@ class WaterBottlesTest {
         return Arrays.asList(cenario1, cenario2);
     }
 
-    @SuppressWarnings("unused")
     @MethodSource("cenariosNumWaterBottles")
     @ParameterizedTest(name = "Cenário de Teste - tendo {0} garrafas de água, podendo trocar {1} garrafas vazias por uma cheia, você consegue beber {2} de água")
     void testNumWaterBottles(int qtdGarrafas, int numGarrafasVaziasPorGarrafaCheia, int resultadoEsperado) {

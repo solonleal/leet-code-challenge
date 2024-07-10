@@ -19,7 +19,6 @@ class FindTheWinnerTest {
         return Arrays.asList(cenario1, cenario2);
     }
 
-    @SuppressWarnings("unused")
     @MethodSource("cenariosFindTheWinner")
     @ParameterizedTest(name = "Cenário de Teste - {0} amigos em círculos eliminando de {1} em {1}, o vencedor é o {2}")
     void testFindTheWinner(int qtdFriends, int jump, int resultadoEsperado) {

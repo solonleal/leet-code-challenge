@@ -24,7 +24,6 @@ class IsPalindromeTest {
         return Arrays.asList(cenario1, cenario2, cenario3, cenario4, cenario5, cenario6);
     }
 
-    @SuppressWarnings("unused")
     @MethodSource("cenariosIsPalindrome")
     @ParameterizedTest(name = "Cenário de Teste - o número {0} é palindrome ({1})")
     void testIsPallindrome(int numero, boolean resultadoEsperado) {

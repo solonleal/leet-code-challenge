@@ -20,7 +20,6 @@ class TwoSumTest {
         return Arrays.asList(cenario1, cenario2, cenario3);
     }
 
-    @SuppressWarnings("unused")
     @MethodSource("cenariosTwoSum")
     @ParameterizedTest(name = "Cenário de Teste - entre os números {0}, quais os dois que somam {1} - os números das posições {2}")
     void testTwoSum(int[] numeros, int valorObjetivo, int[] resultadoEsperado) {

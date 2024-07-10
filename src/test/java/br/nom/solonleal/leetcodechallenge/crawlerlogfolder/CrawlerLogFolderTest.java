@@ -20,7 +20,6 @@ class CrawlerLogFolderTest {
         return Arrays.asList(cenario1, cenario2, cenario3);
     }
 
-    @SuppressWarnings("unused")
     @MethodSource("cenariosMinOperations")
     @ParameterizedTest(name = "Cenário de Teste - após os comandos {0}, precisamos de {1} comando(s) para voltar para a pasta principal")
     void testMinOperations(String[] logs, int resultadoEsperado) {
