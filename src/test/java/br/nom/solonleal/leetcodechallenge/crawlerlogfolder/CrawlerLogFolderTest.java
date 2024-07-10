@@ -22,7 +22,7 @@ class CrawlerLogFolderTest {
 
     @SuppressWarnings("unused")
     @MethodSource("cenariosMinOperations")
-    @ParameterizedTest(name = "Cenário de Teste - após esses comandos {0}, precisamos de {2} operações para voltar para a pasta principal")
+    @ParameterizedTest(name = "Cenário de Teste - após os comandos {0}, precisamos de {1} comando(s) para voltar para a pasta principal")
     void testMinOperations(String[] logs, int resultadoEsperado) {
         int retorno = desafio.minOperations(logs);
 
