@@ -25,5 +25,4 @@ class AverageWaitingTimeTest {
 
         assertEquals(resultadoEsperado, retorno);
     }
-
 }
